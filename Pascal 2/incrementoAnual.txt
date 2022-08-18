@@ -1,18 +1,21 @@
 program incrementoAnual;
 var
-salario,incremento, anho, aFinal : Real;
-wait : Integer;
-
+incremento, salario : Real;
+wait, i, acumulador : Integer;
 begin
-	salario:=3500;
-	for anho := 1 to aFinal:=6 do
 
-	incremento:=salario/10;
-	salario:=incremento+salario;
-	Write('año ');
-	Write(anho);
-	Write(': ');
-	Write(salario);
+salario:=3500;
+writeln('años para incrementar: '); readln (acumulador);
+
+
+for i:=1 to acumulador do
+begin
+salario:=salario*1.1;
+writeln(salario);
+
 end;
+
+
+
 readln(wait);
 end.
