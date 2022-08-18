@@ -1,0 +1,18 @@
+program incrementoAnual;
+var
+salario,incremento, anho, aFinal : Real;
+wait : Integer;
+
+begin
+	salario:=3500;
+	for anho := 1 to aFinal:=6 do
+
+	incremento:=salario/10;
+	salario:=incremento+salario;
+	Write('año ');
+	Write(anho);
+	Write(': ');
+	Write(salario);
+end;
+readln(wait);
+end.
